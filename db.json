@@ -1,0 +1,158 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Classic Chocolate Chip Cookies",
+      "description": "Soft and chewy chocolate chip cookies that are perfect for any occasion",
+      "cuisine": "American",
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 24,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 1/4 cups all-purpose flour",
+        "1 tsp baking soda",
+        "1 tsp salt",
+        "1 cup butter, softened",
+        "3/4 cup granulated sugar",
+        "3/4 cup brown sugar",
+        "2 large eggs",
+        "2 tsp vanilla extract",
+        "2 cups chocolate chips"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C)",
+        "Mix flour, baking soda, and salt in a bowl",
+        "Cream butter and sugars until smooth",
+        "Beat in eggs and vanilla",
+        "Gradually blend in flour mixture",
+        "Stir in chocolate chips",
+        "Drop rounded tablespoons onto ungreased cookie sheets",
+        "Bake for 9-12 minutes until golden brown",
+        "Cool on baking sheet for 2 minutes before removing"
+      ],
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500",
+      "isFavorite": true,
+      "tags": [
+        "dessert",
+        "cookies",
+        "chocolate"
+      ],
+      "rating": 3
+    },
+    {
+      "id": "2",
+      "title": "Chicken Tikka Masala",
+      "description": "Creamy and flavorful Indian curry with tender chicken pieces",
+      "cuisine": "Indian",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.5 lbs boneless chicken, cut into cubes",
+        "1 cup plain yogurt",
+        "2 tbsp lemon juice",
+        "2 tsp ground cumin",
+        "2 tsp paprika",
+        "2 tsp garam masala",
+        "1 tsp turmeric",
+        "1 large onion, chopped",
+        "3 cloves garlic, minced",
+        "1 tbsp ginger, grated",
+        "1 can (14 oz) tomato sauce",
+        "1 cup heavy cream",
+        "2 tbsp butter",
+        "Salt to taste",
+        "Fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Marinate chicken in yogurt, lemon juice, and spices for at least 1 hour",
+        "Heat butter in a large skillet over medium heat",
+        "Cook chicken until browned, about 5-7 minutes",
+        "Remove chicken and set aside",
+        "In the same pan, sauté onions until golden",
+        "Add garlic and ginger, cook for 1 minute",
+        "Add tomato sauce and simmer for 10 minutes",
+        "Return chicken to pan and cook for 10 more minutes",
+        "Stir in heavy cream and simmer for 5 minutes",
+        "Garnish with cilantro and serve with rice or naan"
+      ],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500",
+      "isFavorite": false,
+      "tags": [
+        "curry",
+        "chicken",
+        "indian"
+      ],
+      "rating": 4
+    },
+    {
+      "id": "3",
+      "title": "Margherita Pizza",
+      "description": "Classic Italian pizza with fresh mozzarella, tomato sauce, and basil",
+      "cuisine": "Italian",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 pizza dough (store-bought or homemade)",
+        "1/2 cup tomato sauce",
+        "8 oz fresh mozzarella, sliced",
+        "2 tbsp olive oil",
+        "1/4 cup fresh basil leaves",
+        "2 cloves garlic, minced",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 475°F (245°C)",
+        "Roll out pizza dough on a floured surface",
+        "Transfer to a pizza stone or baking sheet",
+        "Spread tomato sauce evenly over dough",
+        "Arrange mozzarella slices on top",
+        "Drizzle with olive oil",
+        "Bake for 12-15 minutes until crust is golden",
+        "Remove from oven and top with fresh basil",
+        "Slice and serve immediately"
+      ],
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500",
+      "isFavorite": true,
+      "tags": [
+        "pizza",
+        "italian",
+        "vegetarian"
+      ],
+      "rating": 5
+    },
+    {
+      "id": "b3e4",
+      "title": "Chilli chicken",
+      "description": "Chilli Chicken is a popular Indo-Chinese dish made with marinated, fried chicken tossed in a spicy, tangy, and slightly sweet sauce along with onions and capsicum. It’s a restaurant-style starter loved for its crisp texture and bold flavors.",
+      "cuisine": "Indo-chinese",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500g boneless chicken (cut into small cubes)",
+        "1 egg",
+        "2 tbsp all-purpose flour (maida)",
+        "1 tsp ginger-garlic paste",
+        "½ tsp pepper",
+        "1 tsp soy sauce",
+        "Salt to taste",
+        "Oil"
+      ],
+      "instructions": [
+        "Marinate the Chicken\nIn a bowl, add chicken pieces, egg, cornflour, all-purpose flour, pepper, ginger-garlic paste, soy sauce, and salt.\n\nMix well until chicken is evenly coated.\n\nLet it rest for 10–15 minutes.",
+        "Fry the Chicken\nHeat oil in a pan.\n\nDeep fry or shallow fry the marinated chicken until golden brown and crispy.\n\nRemove and keep aside."
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Chicken_Chilli.JPG",
+      "tags": [
+        "Snack"
+      ],
+      "rating": 3
+    }
+  ]
+}
