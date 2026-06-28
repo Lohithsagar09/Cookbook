@@ -1,6 +1,14 @@
 node_modules/
 dist/
+build/
+.vite/
 .vscode/
+.idea/
 .env
+.env.*
+!.env.example
 .DS_Store
+Thumbs.db
 coverage/
+*.log
+*.tmp

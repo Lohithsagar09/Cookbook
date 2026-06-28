@@ -1,5 +1,4 @@
 const API_BASE_URL = 'https://tasty.p.rapidapi.com/recipes/list'
-const FALLBACK_TASTY_KEY = 'your_rapidapi_key_here'
 const DEFAULT_PARAMS = {
   from: 0,
   size: 4, // keep requests tiny for free tier
@@ -26,21 +25,28 @@ const mapToRecipe = (item) => ({
 })
 
 const resolveApiKey = () => {
-  const envKey = import.meta.env.VITE_TASTY_API_KEY
+  const envKey = import.meta.env.VITE_TASTY_API_KEY?.trim()
   if (envKey && envKey !== 'YOUR_RAPIDAPI_KEY_HERE') return envKey
-  return FALLBACK_TASTY_KEY
+  return ''
+}
+
+const buildHeaders = () => {
+  const apiKey = resolveApiKey()
+  if (!apiKey) {
+    throw new Error('Missing VITE_TASTY_API_KEY. Add it to your local .env file.')
+  }
+
+  return {
+    'X-RapidAPI-Key': apiKey,
+    'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
+  }
 }
 
 export const fetchFeaturedRecipes = async () => {
-  const apiKey = resolveApiKey()
-
   const params = new URLSearchParams(DEFAULT_PARAMS).toString()
   const resp = await fetch(`${API_BASE_URL}?${params}`, {
     method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': apiKey,
-      'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-    },
+    headers: buildHeaders(),
   })
 
   if (!resp.ok) {
@@ -53,7 +59,6 @@ export const fetchFeaturedRecipes = async () => {
 
 export const searchTastyRecipes = async (query) => {
   if (!query) return []
-  const apiKey = resolveApiKey()
 
   const params = new URLSearchParams({
     from: 0,
@@ -63,10 +68,7 @@ export const searchTastyRecipes = async (query) => {
 
   const resp = await fetch(`${API_BASE_URL}?${params}`, {
     method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': apiKey,
-      'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-    },
+    headers: buildHeaders(),
   })
 
   if (!resp.ok) {
